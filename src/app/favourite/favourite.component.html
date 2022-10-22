@@ -1,0 +1,31 @@
+<div class="banner">
+    <app-header></app-header>
+    <div class="container">
+        <div class="offer">
+            <h1>YOUR FAVOURITE MOVIES</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 spacer" *ngFor="let ele of userfav">
+                <div class="card" style="width: 18rem;">
+                    <img src="{{ele.poster}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ele.title}}</h5>
+                        <!-- <p class="card-text">{{el}}</p> -->
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Release Date: {{ele.crawled_at}}</li>
+                        <li class="list-group-item">Directed By : {{ele.directed_by}}</li>
+                        <li class="list-group-item">Produced_By : {{ele.produced_by}}</li>
+                    </ul>
+                    <div class="card-body">
+
+                        <a href="{{ele.url}}" class="card-link">Know More</a>&nbsp;&nbsp;&nbsp;
+                        <button class="btn btn-danger" (click)="Delete(ele)">Delete </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- if Products are empty -->
+        <div *ngIf="moviesList?.length == 0" class="alert alert-warning col-md-12" role="alert">Sorry No Products Found</div>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+<div class="banner">
+    <app-admin-header></app-admin-header>
+    <div class="box">
+        <h1>ADD NEW MOVIE </h1>
+        <div class="form-box">
+
+            <form #formref="ngForm" (ngSubmit)="addmovie()">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Movie Title</label>
+                    <input type="text" class="form-control" name="title" aria-describedby="emailHelp" placeholder="Enter Title" [(ngModel)]="movie.title" #email="ngModel" required [class.is-invalid]="email.invalid && email.touched">
+                    <small class="text-danger" [class.d-none]="email.valid || email.untouched">*Title is Required</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1">poster</label>
+                    <input type="text" class="form-control" name="password" placeholder="poster" [(ngModel)]="movie.poster" #password="ngModel" required [class.is-invalid]="password.invalid && password.touched">
+                    <small class="text-danger" [class.d-none]="password.valid || password.untouched">*poster url is Required</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">url</label>
+                    <input type="text" class="form-control" name="username" placeholder="url" [(ngModel)]="movie.url" #username="ngModel" required [class.is-invalid]="username.invalid && username.touched">
+                    <small class="text-danger" [class.d-none]="username.valid || username.untouched">*external url is Required</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Produced_By</label>
+                    <input type="text" class="form-control" name="phone" placeholder="Produced_By" [(ngModel)]="movie.produced_by" #phone="ngModel" required [class.is-invalid]="phone.invalid && phone.touched">
+                    <small class="text-danger" [class.d-none]="phone.valid || phone.untouched">*produced_by is Required</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Directed_by</label>
+                    <input type="text" class="form-control" name="direct" placeholder="directed_by" [(ngModel)]="movie.directed_by" #direct="ngModel" required [class.is-invalid]="direct.invalid && direct.touched">
+                    <small class="text-danger" [class.d-none]="direct.valid || direct.untouched">*directed_by is Required</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">crawled_at</label>
+                    <input type="text" class="form-control" name="crawled_at" placeholder="crawled_at" [(ngModel)]="movie.crawled_at" #relase="ngModel" required="" [class.is-invalid]="relase.invalid && relase.touched">
+                    <small class="text-danger" [class.d-none]="relase.valid || relase.untouched">*produced_by is Required</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Description</label>
+                    <input type="text" class="form-control" name="description" placeholder="description" [(ngModel)]="movie.description" #desc="ngModel" required [class.is-invalid]="desc.invalid && desc.touched">
+                    <small class="text-danger" [class.d-none]="desc.valid || desc.untouched">*produced_by is Required</small>
+                </div>
+                <small class="text-danger"></small>
+                <br>
+                <button type="submit" class="btn btn-primary" [disabled]="formref.invalid">Add Movie</button>&nbsp;&nbsp;&nbsp; already a user <a routerLink="">Login</a>
+            </form>
+        </div>
+    </div>
+</div>

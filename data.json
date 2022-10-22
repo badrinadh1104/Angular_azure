@@ -1,0 +1,15 @@
+{
+    "Movies": [{
+        "id": 1,
+        "crawled_at": "11/17/2019, 23:18:09",
+        "description": "\n            Indiana Jones (Harrison Ford) is no ordinary archeologist. When we first see him, he is somewhere in the Peruvian jungle in 1936, running a booby-trapped gauntlet (complete with an over-sized rolling boulder) to fetch a solid-gold idol. He loses this artifact to his chief rival, a French archeologist named Belloq (Paul Freeman), who then prepares to kill our hero. In the first of many serial-like escapes, Indy eludes Belloq by hopping into a convenient plane. So, then: is Indiana Jones afraid of anything? Yes, snakes. The next time we see Jones, he's a soft-spoken, bespectacled professor. He is then summoned from his ivy-covered environs by Marcus Brody (Denholm Elliott) to find the long-lost Ark of the Covenant. The Nazis, it seems, are already searching for the Ark, which the mystical-minded Hitler hopes to use to make his stormtroopers invincible. But to find the Ark, Indy must first secure a medallion kept under the protection of Indy's old friend Abner Ravenwood, whose daughter, Marion (Karen Allen), evidently has a \"history\" with Jones. Whatever their personal differences, Indy and Marion become partners in one action-packed adventure after another, ranging from wandering the snake pits of the Well of Souls to surviving the pyrotechnic unearthing of the sacred Ark. A joint project of Hollywood prodigies George Lucas and Steven Spielberg, with a script co-written by Lawrence Kasdan and Philip Kaufman, among others, Raiders of the Lost Ark is not so much a movie as a 115-minute thrill ride. Costing 22 million dollars (nearly three times the original estimate), Raiders of the Lost Ark reaped 200 million dollars during its first run. It was followed by Indiana Jones and the Temple of Doom (1985) and Indiana Jones and the Last Crusade (1989), as well as a short-lived TV-series \"prequel.\"        ",
+        "title": "Raiders of the Lost Ark",
+        "url": "https://www.allmovie.com/movie/raiders-of-the-lost-ark-v40118",
+        "poster": "https://cps-static.rovicorp.com/2/Open/CinemaSource/Indiana%20Jones%20and%20The%20Raiders%20of%20the%20Lost%20Ark%20%20The%20IMAX%20Experience/_derived_jpg_q90_600x800_m0/140449R1_CR.jpg",
+        "produced_by": "Jack",
+        "directed_by": "Steven Spielberg"
+    }],
+    "Users": [
+
+    ]
+}

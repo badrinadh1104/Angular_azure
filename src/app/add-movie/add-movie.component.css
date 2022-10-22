@@ -1,0 +1,31 @@
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../../assets/Images/homeback.jpg);
+    width: 100%;
+    height: 250vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.box {
+    /* border: 2px solid greenyellow; */
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box h1 {
+    color: orange;
+    border-bottom: 4px solid greenyellow;
+    margin-bottom: 30px;
+}
+
+.form-box {
+    width: 40%;
+    height: 80%;
+    border: 2px solid white;
+    color: whitesmoke;
+    padding: 30px;
+}

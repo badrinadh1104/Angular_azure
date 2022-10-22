@@ -1,0 +1,23 @@
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../../assets/Images/homeback.jpg);
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+.boxes {
+    height: auto;
+    width: 100%;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+.offer {
+    color: orange;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid greenyellow;
+    margin-bottom: 50px;
+}

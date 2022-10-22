@@ -1,0 +1,22 @@
+<div class="banner">
+    <app-admin-header></app-admin-header>
+    <div class="outer">
+        <form class="d-flex search">
+            <h3>SEARCH :</h3> <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" [(ngModel)]="searchvalue" (input)="search()" name="search" style="width: 40%;">
+        </form>
+        <div class="box" *ngFor="let ele of moviesList">
+            <div class="box-1">
+                <img src="{{ele.poster}}" alt="">
+            </div>
+            <div class="box-2">
+                <h1><input type="text" #title placeholder="{{ele.title}}" (keyup.enter)="updatetitle(title.value,ele.id)"></h1>
+                <p>{{ele.description}}</p>
+                <h3>relaseDate:{{ele.crawled_at}}</h3>
+                <h3>Directed By: {{ele.directed_by}}</h3>
+                <a href="{{ele.url}}">know more</a> &nbsp;&nbsp;
+                <button class="btn btn-danger" (click)="deletemovie(ele.id)">Delete</button>
+            </div>
+        </div>
+
+    </div>
+</div>
